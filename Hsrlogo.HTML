@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating HSR Logo</title>
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+      overflow: hidden;
+    }
+    .sticker {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      animation: float 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+      }
+      50% {
+        transform: translate(-50%, -50%) translateY(-30px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://raw.githubusercontent.com/jammer57/HSRstickerfloat/refs/heads/main/Honkai_Star_Rail_Logo_Simplified_Chinese.webp" class="sticker" alt="Floating Honkai: Star Rail Logo">
+</body>
+</html>
